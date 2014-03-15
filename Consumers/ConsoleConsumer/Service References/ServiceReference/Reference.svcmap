@@ -18,13 +18,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:9090/Services/Definition.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://default-environment-zg2axpn3f3.elasticbeanstalk.com/Services/Definition.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Definition.disco" MetadataType="Disco" ID="7a4f281a-a282-4fc5-9263-0babd87d7865" SourceId="1" SourceUrl="http://localhost:9090/Services/Definition.svc?disco" />
-    <MetadataFile FileName="Definition.xsd" MetadataType="Schema" ID="1b210511-e432-4137-b4c4-d98f96f486c5" SourceId="1" SourceUrl="http://localhost:9090/Services/Definition.svc?xsd=xsd1" />
-    <MetadataFile FileName="Definition1.xsd" MetadataType="Schema" ID="d4d8ca0b-1cd6-49e8-b5f6-6a14f56b95c4" SourceId="1" SourceUrl="http://localhost:9090/Services/Definition.svc?xsd=xsd0" />
-    <MetadataFile FileName="Definition.wsdl" MetadataType="Wsdl" ID="31fa9da9-8211-45c5-b51a-cfd9ebd670f1" SourceId="1" SourceUrl="http://localhost:9090/Services/Definition.svc?wsdl" />
+    <MetadataFile FileName="Definition2.xsd" MetadataType="Schema" ID="55587ab0-e487-4b54-a458-cccb5e772546" SourceId="1" SourceUrl="http://default-environment-zg2axpn3f3.elasticbeanstalk.com/WordService_deploy/Services/Definition.svc?xsd=xsd1" />
+    <MetadataFile FileName="Definition21.xsd" MetadataType="Schema" ID="e15ea4e7-a13d-4837-ab2a-29a796994804" SourceId="1" SourceUrl="http://default-environment-zg2axpn3f3.elasticbeanstalk.com/WordService_deploy/Services/Definition.svc?xsd=xsd0" />
+    <MetadataFile FileName="Definition1.wsdl" MetadataType="Wsdl" ID="1a03bee4-9fc7-4016-af7f-3f465c12abfd" SourceId="1" SourceUrl="http://default-environment-zg2axpn3f3.elasticbeanstalk.com/WordService_deploy/Services/Definition.svc?wsdl" />
+    <MetadataFile FileName="Definition1.disco" MetadataType="Disco" ID="a49322a4-caf9-46d0-9557-5dbabd4210fb" SourceId="1" SourceUrl="http://default-environment-zg2axpn3f3.elasticbeanstalk.com/WordService_deploy/Services/Definition.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="iHJhsUYVXzEt04D8B/4lBDw7CbI=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="07S5KLJsJ72U7vo8Yqw16oCo8CE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IDefinition">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IDefinition" contract="ServiceReference.IDefinition" bindingType="basicHttpBinding" address="http://localhost:9090/Services/Definition.svc" bindingConfiguration="BasicHttpBinding_IDefinition">
+    <endpoint name="BasicHttpBinding_IDefinition" contract="ServiceReference.IDefinition" bindingType="basicHttpBinding" address="http://default-environment-zg2axpn3f3.elasticbeanstalk.com/WordService_deploy/Services/Definition.svc" bindingConfiguration="BasicHttpBinding_IDefinition">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:9090/Services/Definition.svc</serializedValue>
+          <serializedValue>http://default-environment-zg2axpn3f3.elasticbeanstalk.com/WordService_deploy/Services/Definition.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
