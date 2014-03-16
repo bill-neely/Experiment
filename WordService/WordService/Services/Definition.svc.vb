@@ -3,7 +3,8 @@ Public Class Definition
     Implements IDefinition
 
     Public Function GetDefintion(ByVal word As String) As String Implements IDefinition.GetDefinition
-        Return Definitions.GetDefinition(word)
+        Dim defSvc As New Definitions()
+        Return defSvc.GetDefinition(word)
     End Function
 
 End Class

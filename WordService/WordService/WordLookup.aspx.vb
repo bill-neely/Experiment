@@ -8,14 +8,20 @@
     End Sub
 
     Private Sub btnGetDef_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnGetDef.Click
-        lblDefinition.Text = "'" & txtWord.Text & "' - " & Definitions.GetDefinition(txtWord.Text)
+        Dim defSvc As New Definitions()
+        lblDefinition.Text = "'" & txtWord.Text & "' - " & defSvc.GetDefinition(txtWord.Text)
+        defSvc = Nothing
     End Sub
 
     Private Sub GetVersions()
         Dim version As New Text.StringBuilder
 
         Dim myVersion As Reflection.AssemblyName = Reflection.Assembly.GetExecutingAssembly.GetName()
-        lblVersion.Text = myVersion.Name & " version: " & myVersion.Version.ToString
+        version.AppendLine(myVersion.Name & " version: " & myVersion.Version.ToString)
+
+        version.AppendLine("connection=" & Definitions.connection)
+
+        lblVersion.Text = version.ToString
 
     End Sub
 End Class
