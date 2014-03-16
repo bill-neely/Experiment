@@ -19,8 +19,6 @@
         Dim myVersion As Reflection.AssemblyName = Reflection.Assembly.GetExecutingAssembly.GetName()
         version.AppendLine(myVersion.Name & " version: " & myVersion.Version.ToString)
 
-        version.AppendLine("connection=" & Definitions.connection)
-
         lblVersion.Text = version.ToString
 
     End Sub

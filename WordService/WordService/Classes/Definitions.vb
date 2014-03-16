@@ -3,20 +3,23 @@
 Friend Class Definitions
 
     Friend Function GetDefinition(ByVal Word As String) As String
+        If Word.ToLower = "get connection" Then
+            Return EnvironmentConnection
+        End If
         Return getDef(Word)
     End Function
 
-    Private Function defs(ByVal word As String) As String
-        Dim myDictionary As New Dictionary(Of String, String)
-        myDictionary.Add("test", "the trial of the quality of something")
-        myDictionary.Add("hello", "used to express a greeting, answer a telephone, or attract attention")
+    'Private Function defs(ByVal word As String) As String
+    '    Dim myDictionary As New Dictionary(Of String, String)
+    '    myDictionary.Add("test", "the trial of the quality of something")
+    '    myDictionary.Add("hello", "used to express a greeting, answer a telephone, or attract attention")
 
-        If myDictionary.ContainsKey(word.ToLower) Then
-            Return myDictionary(word.ToLower)
-        Else
-            Return "I do not know what '" & word & "' means"
-        End If
-    End Function
+    '    If myDictionary.ContainsKey(word.ToLower) Then
+    '        Return myDictionary(word.ToLower)
+    '    Else
+    '        Return "I do not know what '" & word & "' means"
+    '    End If
+    'End Function
 
     Public Sub New()
 
@@ -38,10 +41,15 @@ Friend Class Definitions
         sqlConn.Close()
         sqlConn = Nothing
 
-        Return def
+        If def = "" Then
+            Return "I do not know what '" & word & "' means"
+        Else
+            Return def
+        End If
+
     End Function
 
-    Friend Shared ReadOnly Property connection As String
+    Friend Shared ReadOnly Property EnvironmentConnection As String
         Get
             Dim cs As String = "None"
             Try
@@ -56,6 +64,12 @@ Friend Class Definitions
                 cs = ex.Message
             End Try
             Return cs
+        End Get
+    End Property
+
+    Friend Shared ReadOnly Property connection As String
+        Get
+            Return "server=aaboom5og2k1tp.ct7eyw7ikemp.us-east-1.rds.amazonaws.com;user=BillNeely;database=ebdb;port=3306;password=labattBillNeely;"
         End Get
     End Property
 
