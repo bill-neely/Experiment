@@ -4,17 +4,19 @@
 <ServiceContract()>
 Public Interface IDefinitionREST
 
-    '<OperationContract()>
-    '    <WebInvoke()>
-    'Function noParms(ByVal word As String) As String
+  
+
+    '<OperationContract()> _
+    '<WebInvoke(Method:="GET", UriTemplate:="json/{word}", BodyStyle:=WebMessageBodyStyle.Bare, RequestFormat:=WebMessageFormat.Json, ResponseFormat:=WebMessageFormat.Json)> _
+    'Function jsonData(ByVal word As String) As String
+
+    '<OperationContract()> _
+    '    <WebGet(UriTemplate:="json/{word}", BodyStyle:=WebMessageBodyStyle.Wrapped, RequestFormat:=WebMessageFormat.Json, ResponseFormat:=WebMessageFormat.Json)> _
+    'Function jsonData(ByVal word As String) As String
 
     <OperationContract()> _
-    <WebInvoke(Method:="GET", UriTemplate:="json/{id}", BodyStyle:=WebMessageBodyStyle.Bare, RequestFormat:=WebMessageFormat.Json, ResponseFormat:=WebMessageFormat.Json)> _
+    <WebInvoke(Method:="GET", UriTemplate:="json/{word}", BodyStyle:=WebMessageBodyStyle.Wrapped, RequestFormat:=WebMessageFormat.Json, ResponseFormat:=WebMessageFormat.Json)> _
     Function jsonData(ByVal word As String) As String
-
-    <OperationContract()> _
-    <WebInvoke(Method:="get", UriTemplate:="xml/{id]", BodyStyle:=WebMessageBodyStyle.Bare, RequestFormat:=WebMessageFormat.Xml, ResponseFormat:=WebMessageFormat.Xml)> _
-    Function xmlData(ByVal word As String) As String
 
 
 

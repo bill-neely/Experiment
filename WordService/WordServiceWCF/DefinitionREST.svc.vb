@@ -6,11 +6,12 @@ Public Class DefinitionREST
         Return "From the jsonData function"
     End Function
 
-    Public Function xmlData(ByVal word As String) As String Implements IDefinitionREST.xmlData
-        Return "From the xmlData function"
-    End Function
+    'Public Function xmlData(ByVal word As String) As String Implements IDefinitionREST.xmlData
+    '    Return "From the xmlData function"
+    'End Function
 
     'Public Function noParm(ByVal word As String) As String Implements IDefinitionREST.noParms
     '    Return "From the noParms function"
     'End Function
+
 End Class
