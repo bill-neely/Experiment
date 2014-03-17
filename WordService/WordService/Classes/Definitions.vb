@@ -1,53 +1,52 @@
-﻿Imports MySql.Data.MySqlClient
-
+﻿
 Friend Class Definitions
 
     Friend Function GetDefinition(ByVal Word As String) As String
         If Word.ToLower = "get connection" Then
             Return EnvironmentConnection
         End If
-        Return getDef(Word)
+        Return defs(Word)
     End Function
 
-    'Private Function defs(ByVal word As String) As String
-    '    Dim myDictionary As New Dictionary(Of String, String)
-    '    myDictionary.Add("test", "the trial of the quality of something")
-    '    myDictionary.Add("hello", "used to express a greeting, answer a telephone, or attract attention")
+    Private Function defs(ByVal word As String) As String
+        Dim myDictionary As New Dictionary(Of String, String)
+        myDictionary.Add("test", "the trial of the quality of something - from hardcode")
+        myDictionary.Add("hello", "used to express a greeting, answer a telephone, or attract attention - from hardcode")
 
-    '    If myDictionary.ContainsKey(word.ToLower) Then
-    '        Return myDictionary(word.ToLower)
-    '    Else
-    '        Return "I do not know what '" & word & "' means"
-    '    End If
-    'End Function
+        If myDictionary.ContainsKey(word.ToLower) Then
+            Return myDictionary(word.ToLower)
+        Else
+            Return "I do not know what '" & word & "' means"
+        End If
+    End Function
 
     Public Sub New()
 
     End Sub
 
-    Private Function getDef(ByVal word As String) As String
-        Dim def As String
+    'Private Function getDef(ByVal word As String) As String
+    '    Dim def As String
 
-        Dim sqlConn As MySqlConnection
-        sqlConn = New MySqlConnection(Definitions.connection)
-        sqlConn.Open()
+    '    Dim sqlConn As MySqlConnection
+    '    sqlConn = New MySqlConnection(Definitions.connection)
+    '    sqlConn.Open()
 
-        Dim sql As String = "select theDefinition from Words where theword = '" & word.ToLower.Trim & "'"
-        Dim cmd = New MySqlCommand(sql, sqlConn)
-        def = CStr(cmd.ExecuteScalar)
-        cmd.Dispose()
-        cmd = Nothing
+    '    Dim sql As String = "select theDefinition from Words where theword = '" & word.ToLower.Trim & "'"
+    '    Dim cmd = New MySqlCommand(sql, sqlConn)
+    '    def = CStr(cmd.ExecuteScalar)
+    '    cmd.Dispose()
+    '    cmd = Nothing
 
-        sqlConn.Close()
-        sqlConn = Nothing
+    '    sqlConn.Close()
+    '    sqlConn = Nothing
 
-        If def = "" Then
-            Return "I do not know what '" & word & "' means"
-        Else
-            Return def
-        End If
+    '    If def = "" Then
+    '        Return "I do not know what '" & word & "' means - from SQL attempt"
+    '    Else
+    '        Return def & " - from SQL attempt"
+    '    End If
 
-    End Function
+    'End Function
 
     Friend Shared ReadOnly Property EnvironmentConnection As String
         Get

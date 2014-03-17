@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WordService", "WordService\WordService.vbproj", "{E0F9E66B-14F2-40BD-A6DE-848D7FF2BC43}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WordServiceWCF", "WordServiceWCF\WordServiceWCF.vbproj", "{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,16 @@ Global
 		{E0F9E66B-14F2-40BD-A6DE-848D7FF2BC43}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E0F9E66B-14F2-40BD-A6DE-848D7FF2BC43}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E0F9E66B-14F2-40BD-A6DE-848D7FF2BC43}.Release|x86.ActiveCfg = Release|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A16E5FAD-FA96-42D9-92C5-F2B5721392FA}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

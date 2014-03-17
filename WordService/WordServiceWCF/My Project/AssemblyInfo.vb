@@ -7,17 +7,18 @@ Imports System.Runtime.InteropServices
 ' associated with an assembly.
 
 ' Review the values of the assembly attributes
-<Assembly: AssemblyTitle("WordService")> 
+
+<Assembly: AssemblyTitle("WordServiceWCF")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("WordService")> 
-<Assembly: AssemblyCopyright("")> 
+<Assembly: AssemblyCompany("Microsoft")> 
+<Assembly: AssemblyProduct("WordServiceWCF")> 
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2014")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("eb3f4cb1-5ca6-4775-8fd5-fd41ff952447")> 
+<Assembly: Guid("dada1d1c-4c8e-4928-bb15-de557f4c37ca")> 
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -30,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.11")> 
-<Assembly: AssemblyFileVersion("1.0.0.11")> 
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 
