@@ -55,7 +55,6 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="RESTServiceImpl.svc" />
-    <Content Include="Service1.svc" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -72,10 +71,6 @@
     <Compile Include="RESTServiceImpl.svc.cs">
       <DependentUpon>RESTServiceImpl.svc</DependentUpon>
     </Compile>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
-    </Compile>
-    <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
