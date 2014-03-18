@@ -7,14 +7,14 @@ using System.Web.SessionState;
 using System.Web.Routing;
 using System.ServiceModel.Activation;
 
-namespace RESTfulDemo
+namespace ServiceInC
 {
     public class Global : System.Web.HttpApplication
     {
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            RouteTable.Routes.Add( new System.ServiceModel.Activation.ServiceRoute("RestService", new WebServiceHostFactory(), typeof(RestSerivce))); 
+            RouteTable.Routes.Add(new ServiceRoute("RestService", new WebServiceHostFactory(), typeof(RESTServiceImpl)));
         }
 
         protected void Session_Start(object sender, EventArgs e)

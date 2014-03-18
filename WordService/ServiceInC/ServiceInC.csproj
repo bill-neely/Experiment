@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{68476C9F-3893-48DD-AA56-A2156EEDB0AC}</ProjectGuid>
+    <ProjectGuid>{80E08104-F281-43D3-B319-5EE789C8D153}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RESTfulDemo</RootNamespace>
-    <AssemblyName>RESTfulDemo</AssemblyName>
+    <RootNamespace>ServiceInC</RootNamespace>
+    <AssemblyName>ServiceInC</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="RESTServiceImpl.svc" />
+    <Content Include="Service1.svc" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -66,10 +68,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IRESTService.cs" />
-    <Compile Include="IService.cs" />
+    <Compile Include="IRESTServiceImpl.cs" />
+    <Compile Include="RESTServiceImpl.svc.cs">
+      <DependentUpon>RESTServiceImpl.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service1.svc.cs">
+      <DependentUpon>Service1.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RESTService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -81,8 +88,8 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
-          <AutoAssignPort>False</AutoAssignPort>
-          <DevelopmentServerPort>9292</DevelopmentServerPort>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65019</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
