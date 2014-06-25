@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="BoostrapASP.master.vb"
+    Inherits="BoostrapASP.BoostrapASP" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link type="text/css" rel="Stylesheet" href="css/bootstrap.css" />
+    <link type="text/css" rel="Stylesheet" href="css/normalize.css" />
+    <link href="css/ourstyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="Default.aspx" id="logo">Welcome to our Website</a>
+                <nav>
+                    <ul class="nav pull-right">
+                        <li><a href="Default.aspx">Home</a></li>
+                        <li><a href="">Schedule an appointment</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="www.twitter.com">Follow us on Twitter</a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="span10">
+        <asp:ContentPlaceHolder ID="detailsGoHere" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="footer">
+        <footer class="footer">
+            <small>
+                <a href="mailto:bill.neely.tx@gmail.com">Bill Neely</a>
+            </small>    
+            <nav>
+                <ul>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>   
+        </footer>
+    </div>
+
+    </form>
+    <script type="text/javascript" src='<% ResolveUrl("~Js/jquery-1.2.3.min.js") %>'></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
